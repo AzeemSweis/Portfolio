@@ -1,0 +1,52 @@
+body {
+  background-color: #323232;
+}
+
+h1 {
+  font-family: 'Inconsolata', sans-serif;
+  color: white;
+  size: 80px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  transition-duration: .3s;
+  color: #14ffec;
+}
+
+/* title */
+.container-fluid {
+  position: absolute;
+  top: 50%;
+  margin-top: -110px;
+  left: 25%;
+  width: 50%;
+}
+
+.title-content {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.title-content h1 {
+  font-size: 80px;
+}
+
+.navigation {
+  text-align: center;
+}
+
+.navigation a {
+  text-decoration: none;
+}

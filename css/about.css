@@ -1,0 +1,14 @@
+body {
+  background-color: #323232;
+}
+
+h1 {
+  font-family: 'Inconsolata', sans-serif;
+  color: white;
+  size: 80px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
