@@ -51,6 +51,17 @@ a:hover {
   text-decoration: none;
 }
 
+.socials {
+  padding-top: 30px;
+  padding-left: 36px;
+  filter: invert(98%) sepia(82%) saturate(0%) hue-rotate(256deg) brightness(112%) contrast(101%);
+}
+
+.images img {
+  margin: auto;
+  display: block;
+}
+
 @media (max-width: 1028px) {
   .container-fluid {
     margin-top: -200px;
@@ -60,5 +71,9 @@ a:hover {
 
   .title-content h1 {
     font-size: 150px;
+  }
+
+  .navigation a {
+    text-decoration: underline;
   }
 }
