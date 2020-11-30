@@ -1,0 +1,165 @@
+body {
+  color: rgba(255, 255, 255, .75);
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #191919;
+}
+
+h1 {
+  font-family: 'Anonymous Pro', monospace;
+  color: white;
+  size: 80px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  padding: 10px 30px 0;
+}
+
+.navbar-brand {
+  font-size: 60px;
+}
+
+.navbar-dark .navbar-brand {
+  color: #14ffec;
+}
+
+.navbar-toggler-icon {
+  font-size: 2.5rem;
+}
+
+.navbar-nav a {
+  font-size: 30px;
+  width: 120px;
+}
+
+.title {
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 6em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.intro {
+  padding: 0 200px 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 1s steps(10) .20s 1 normal both,
+    blinkTextCursor 1000ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 6em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.hr {
+  background: white;
+  margin: 0 600px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.projects {
+  padding: 40px 50px 0;
+}
+
+.my-site {
+  padding: 50px;
+}
+
+.my-site img {
+  max-width: 30%;
+}
+
+.my-site h1 {
+  font-size: 45px;
+}
+
+.my-site p {
+  line-height: 1.8;
+}
+
+.my-site .curve {
+  width: 33%;
+  height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right: 2rem;
+}
+
+.projhr {
+  background: white;
+  margin: 0 300px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1028px) {
+  .navbar-nav a {
+    font-size: 60px;
+  }
+
+  .title {
+    font-size:40px;
+    margin: 80px auto 20px;
+  }
+
+  .intro {
+    padding: 0 80px 200px;
+  }
+
+  .my-site img {
+    max-width: 80%;
+  }
+
+  .intro p {
+    font-size: 40px;
+  }
+
+  .my-site p {
+    font-size: 40px;
+  }
+}

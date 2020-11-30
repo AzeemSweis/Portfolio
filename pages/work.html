@@ -1,24 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Work</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>Work</title>
 
-    <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <h1>What I do.</h1>
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/work.css">
 
-  </body>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="../index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link active" href="../pages/work.html">Work <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="../pages/about.html">About</a>
+        <a class="nav-link" href="../pages/travel.html">Travels</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="title">
+    <h1 class="line-1 anim-typewriter">What I do.</h1>
+  </div>
+
+  <div class="intro">
+    <p>Each project listed below has allowed me to explore and learn more about different aspects about web development.
+      And with each new project I have used what I have learned previously in order to create more complex websites each time.</p>
+  </div>
+  <hr class="hr" />
+  <section class="projects">
+    <div class="my-site">
+      <a href="../index.html"><img src="../images/mysite.png" alt="pfp" class="curve"></a>
+      <h2>My Portfolio</h2>
+      <p>This is my most recent project, the website this summary is displayed on. Here I have begun to incorporate Javascript design elements
+        into the project, allowing for animations and displaying my resume. I have also divereted away from using bootstrap (aside from the navbar)
+        when displaying my page. This was intentional, as my goal was to be more comfortable creating my own, reusable, code that is both aesthetically
+        pleasing, properly placed, and responsive. Additionally, I have used this site to become more comfortable with editing bootstraps code to fit my
+        own projects better, as seen in the unique design of the bootstrap navbar. All of this combined has created a website I am proud
+        to utilize in showcasing myself, my work, and my travels. </p>
+    </div>
+    <hr class="projhr">
+    <div class="my-site">
+      <a href="https://azeemsweis.github.io/PetraBuildingOakland/"><img src="../images/pbo.png" alt="pfp" class="curve"></a>
+      <h2>Petra Commercial Building - Oakland</h2>
+      <p>This website was made for a client and was my second freelancing job. Although a 1-page landing site was all that was requested, I took this opportunity
+        to expand my knowledge with bootstrap, utilizing the grid to its fullest extent for what was needed to create this website. Additionally, one of the best
+        concepts I was able to learn was to be able to utilize an API and display non-static information on the page - in the form of Google Maps API. Aside from the challenges
+        of learning how to effectively use an API, responsiveness was the most challenging aspect of this project. I needed to use multiple <em>Media Queries</em> to
+        ensure the website displayed properly on multiple device sizes. Another important learning aspect of this project was being able to experience communication with
+        a client - someone who needed something done other than me. At this point I was comfortable with taking an approach the client wanted, and also had the confidence to
+        approach requests I had not implemented yet. </p>
+    </div>
+    <hr class="projhr">
+    <div class="my-site">
+      <a href="https://azeemsweis.github.io/Sweis-Bookkeeping/"><img src="../images/swsbook.png" alt="pfp" class="curve"></a>
+      <h2>Bookkeeping Website</h2>
+      <p>This was my first freelancing job, made for my father's side business. This was an opportunity to learn how to implement features requested by someone else.
+        Although my limitations were greater at the time, I was able to commuincate at a more personal level with my father and used the lax deadline date to implement features
+        I had learned as I was creating the website. I used the Bootstrap grid to ensure responsiveness and cleanliness throughout the one page website. Additionally, using other
+        Bootstrap components such as the <em>Carousel</em> and <em>Cards</em> to display information in a more effective manner.  </p>
+    </div>
+  </section>
+
+</body>
+
 </html>
