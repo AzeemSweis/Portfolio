@@ -19,8 +19,16 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+.navbar {
+  padding: 10px 30px 0;
+}
+
 .navbar-brand {
   font-size: 60px;
+}
+
+.navbar-toggler-icon {
+  font-size: 3rem;
 }
 
 .navbar-nav a {
