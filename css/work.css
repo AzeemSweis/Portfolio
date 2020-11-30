@@ -148,18 +148,51 @@ p {
   }
 
   .intro {
-    padding: 0 80px 200px;
+    padding: 0 80px 40px;
+  }
+
+  .my-site .curve {
+    width: 100%;
+    height: auto;
+    min-width: 600px;
+    float: none;
+    margin-right: 0;
+  }
+
+  .my-site {
+    text-align: center;
+  }
+
+  .my-site a {
+    display: inline-block;
+
   }
 
   .my-site img {
-    max-width: 80%;
-  }
-
-  .intro p {
-    font-size: 40px;
+    max-width: 50%;
+    padding-bottom: 70px;
+    margin: 0 auto;
   }
 
   .my-site p {
-    font-size: 40px;
+    font-size: 20px;
+  }
+
+  .hr {
+    background: white;
+    margin: 0 200px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .projhr {
+    background: white;
+    margin: 0 100px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
