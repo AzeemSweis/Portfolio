@@ -178,6 +178,12 @@ p {
     margin: 0 auto;
   }
 
+  .my-site h2 {
+    font-size: 60px;
+    color: #14ffec;
+    padding-bottom: 20px;
+  }
+
   .my-site p {
     font-size: 40px;
   }
