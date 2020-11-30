@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  font-family: 'Inconsolata', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   color: white;
   size: 80px;
 }
@@ -75,17 +75,17 @@ a:hover {
 
 .socials {
   padding-top: 30px;
-  padding-left: 36px;
-  filter: invert(98%) sepia(82%) saturate(0%) hue-rotate(256deg) brightness(112%) contrast(101%);
+  padding-bottom: 36px;
 }
 
 .images:hover {
-  filter: invert(77%) sepia(94%) saturate(419%) hue-rotate(97deg) brightness(108%) contrast(105%);
+  filter: invert(98%) sepia(82%) saturate(0%) hue-rotate(256deg) brightness(112%) contrast(101%);
 }
 
 .images img {
   margin: auto;
   display: block;
+  width: 50%;
 }
 
 @media (max-width: 1028px) {
