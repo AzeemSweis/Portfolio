@@ -40,7 +40,11 @@ a:hover {
 }
 
 .title-content h1 {
-  font-size: 80px;
+  font-size: 60px;
+}
+
+.name {
+  color: #14ffec;
 }
 
 .navigation {
@@ -51,10 +55,32 @@ a:hover {
   text-decoration: none;
 }
 
+.navigation a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #14ffec;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navigation a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .socials {
   padding-top: 30px;
   padding-left: 36px;
   filter: invert(98%) sepia(82%) saturate(0%) hue-rotate(256deg) brightness(112%) contrast(101%);
+}
+
+.images:hover {
+  filter: invert(77%) sepia(94%) saturate(419%) hue-rotate(97deg) brightness(108%) contrast(105%);
 }
 
 .images img {
@@ -70,7 +96,7 @@ a:hover {
   }
 
   .title-content h1 {
-    font-size: 150px;
+    font-size: 100px;
   }
 
   .navigation a {
