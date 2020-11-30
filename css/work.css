@@ -151,6 +151,10 @@ p {
     padding: 0 80px 40px;
   }
 
+  .intro p{
+    font-size: 35px;
+  }
+
   .my-site .curve {
     width: 100%;
     height: auto;
@@ -175,7 +179,7 @@ p {
   }
 
   .my-site p {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .hr {
