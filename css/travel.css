@@ -1,22 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Open+Sans:700);
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
 body {
-  color: rgba(255, 255, 255, 0.75);
-  font-family: "Anonymous Pro", monospace;
+  color: rgba(255, 255, 255, .75);
+  font-family: 'Anonymous Pro', monospace;
   background-color: #191919;
 }
 
 h1 {
-  font-family: "Anonymous Pro", monospace;
+  font-family: 'Anonymous Pro', monospace;
   color: white;
   size: 80px;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
@@ -51,7 +59,7 @@ p {
   top: 50%;
   width: 9em;
   margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  border-right: 2px solid rgba(255, 255, 255, .75);
   font-size: 180%;
   text-align: center;
   white-space: nowrap;
@@ -67,25 +75,30 @@ p {
 
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 2s steps(16) 0.2s 1 normal both, blinkTextCursor 1000ms steps(44) infinite normal;
+  animation: typewriter 2s steps(16) .20s 1 normal both,
+    blinkTextCursor 1000ms steps(44) infinite normal;
 }
 
 @keyframes typewriter {
   from {
     width: 0;
   }
+
   to {
     width: 9em;
   }
 }
+
 @keyframes blinkTextCursor {
   from {
-    border-right-color: rgba(255, 255, 255, 0.75);
+    border-right-color: rgba(255, 255, 255, .75);
   }
+
   to {
     border-right-color: transparent;
   }
 }
+
 .map iframe {
   max-width: 1000px;
   margin: 0 auto;
@@ -97,47 +110,90 @@ iframe {
   border-style: none;
 }
 
-.trip {
-  font-family: "Fjalla One", sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 42px;
-  margin: 0;
-  line-height: 47px;
-  letter-spacing: 2px;
-  transform: translate(-50%, -50%);
+.hr {
+  background: white;
+  margin: 0 100px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.text {
+  position: static;
+  width: 100%;
+  min-width: 800px;
+  text-align: center;
   top: 50%;
-  left: 50%;
-  display: block;
+  margin-top: 100px;
+  padding-bottom: 150px;
+
+}
+
+.text h1 {
+  color: #fdfc3f;
+  transform: matrix(1, -0.20, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.20, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, -0.20, 0, 1, 0, 0);
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 70px;
+  text-shadow: 4px 5px black, 6px 7px #ff241e;
+}
+
+.text h3 {
+  color: #fff;
+  transform: matrix(1, -0.20, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.20, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, -0.20, 0, 1, 0, 0);
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+h1 span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h3:before, h3:after {
+  content: " ";
   position: absolute;
-  max-width: 225px;
+  width: 100px;
+  height: 8px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
-.TTRtitle {
-  transform: translateX(-50%) rotate(-10deg);
-  display: block;
-  float: left;
-  left: 50%;
-  position: relative;
-}
-.TTRtitle span {
-  transform: skew(-10deg);
-  display: block;
-  float: left;
-  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px, #533d4a 5px 5px, #533d4a 6px 6px;
-  min-width: 10px;
-  min-height: 10px;
-  position: relative;
+h3:before {
+  margin: 5px 0 0 -110px;
 }
 
-.TRtitle:nth-child(1) {
-  color: #e55643;
-}
-.TRtitle:nth-child(2) {
-  color: #2b9f5e;
-}
-.TRtitle:nth-child(3) {
-  color: #f1c83c;
+h3:after {
+  margin: 5px 0 0 10px;
 }
 
-/*# sourceMappingURL=travel.css.map */
+.gallery01 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: inherit;
+}
+
+.flex-column {
+  max-width: 450px;
+}
+
+/* .gal-img {
+  transition: transform .4s;
+}
+
+.gal-img:hover {
+  transform: scale(1.35);
+} */
