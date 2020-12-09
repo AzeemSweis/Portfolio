@@ -126,7 +126,6 @@ iframe {
   text-align: center;
   top: 50%;
   margin-top: 100px;
-  padding-bottom: 150px;
 
 }
 
@@ -179,21 +178,22 @@ h3:after {
   margin: 5px 0 0 10px;
 }
 
-.gallery01 {
+.gallery {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
   background-color: inherit;
 }
 
+.gallery p {
+  text-align: justify;
+  padding: 10px;
+}
+
 .flex-column {
-  max-width: 450px;
+  max-width: 400px;
 }
 
-/* .gal-img {
-  transition: transform .4s;
+.gal-img {
+  padding: 10px;
 }
-
-.gal-img:hover {
-  transform: scale(1.35);
-} */
