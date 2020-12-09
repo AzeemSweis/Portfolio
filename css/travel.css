@@ -119,6 +119,22 @@ iframe {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.skewed span {
+  display: inline-block;
+  color: white;
+  font-family: Oswald, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0 25px;
+  /* to extend the border past the text */
+  margin: 80px 0;
+  background: green;
+  box-shadow: 0 0 0px 10px green;
+  border: 10px solid black;
+  -webkit-transform: rotate(-12deg) skew(-12deg);
+          transform: rotate(-12deg) skew(-12deg);
+}
+
 .text1 {
   position: static;
   width: 100%;
@@ -217,7 +233,7 @@ h3:after {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 70px;
-  text-shadow: 4px 5px #855723, 6px 7px #228b22;
+  text-shadow: 4px 5px #613318, 6px 7px #228b22;
 }
 
 .text2 h3 {
@@ -232,6 +248,12 @@ h3:after {
   letter-spacing: 0.1em;
   margin-bottom: 10px;
   position: relative;
+}
+
+.subhead {
+  font-size: 1.5rem;
+  padding: 120px 200px 0;
+  text-align: justify;
 }
 
 
@@ -315,4 +337,27 @@ h3:before {
 
 h3:after {
   margin: 5px 0 0 10px;
+}
+
+@media (max-width: 1028px) {
+  .navbar-nav a {
+    font-size: 60px;
+  }
+
+  .title {
+    font-size:40px;
+    margin: 80px auto 20px;
+  }
+
+  .introduction {
+    padding: 0 80px 200px;
+  }
+
+  .introduction img {
+    max-width: 50%;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
 }
