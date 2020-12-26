@@ -339,6 +339,17 @@ h3:after {
   margin: 5px 0 0 10px;
 }
 
+.hells-main img{
+  max-width: 60%;
+}
+
+.hells-main p {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 30px 0 30px;
+
+}
+
 @media (max-width: 1028px) {
   .navbar-nav a {
     font-size: 60px;
