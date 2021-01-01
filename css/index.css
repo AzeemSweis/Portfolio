@@ -78,7 +78,7 @@ a:hover {
   padding-bottom: 36px;
 }
 
-.images:hover {
+img:hover {
   filter: invert(98%) sepia(82%) saturate(0%) hue-rotate(256deg) brightness(112%) contrast(101%);
 }
 
