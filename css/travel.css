@@ -196,7 +196,7 @@ h3:after {
 
 .gallery {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 30px;
   background-color: inherit;
 }
@@ -212,6 +212,10 @@ h3:after {
 
 .gal-img {
   padding: 10px 20px;
+}
+
+.chunk {
+  max-width: 50%;
 }
 
 /* ---- */
@@ -252,7 +256,7 @@ h3:after {
 
 .subhead {
   font-size: 1.5rem;
-  padding: 120px 200px 0;
+  padding: 140px 100px 0;
   text-align: justify;
 }
 
@@ -339,7 +343,7 @@ h3:after {
   margin: 5px 0 0 10px;
 }
 
-.hells-main img{
+/* .hells-main img{
   max-width: 60%;
 }
 
@@ -348,7 +352,7 @@ h3:after {
   margin: 0 auto;
   padding: 30px 0 30px;
 
-}
+} */
 
 @media (max-width: 1028px) {
   .navbar-nav a {
@@ -368,7 +372,15 @@ h3:after {
     max-width: 50%;
   }
 
+  .chunk {
+    max-width: 90%;
+  }
+
+  .subhead {
+    font-size: 30px;
+  }
+
   p {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
