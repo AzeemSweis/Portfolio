@@ -36,7 +36,7 @@ p {
 }
 
 .navbar-dark .navbar-brand {
-  color: #3EB489;
+  color: #14ffec;
 }
 
 .navbar-toggler-icon {
@@ -369,6 +369,6 @@ h3:after {
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 40px;
   }
 }
