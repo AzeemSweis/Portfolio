@@ -154,6 +154,10 @@ p {
     margin: 80px auto 20px;
   }
 
+  .resume {
+    display: none;
+  }
+
   .intro {
     padding: 0 80px 40px;
   }
