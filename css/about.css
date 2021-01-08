@@ -1,22 +1,23 @@
 body {
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;
-  background-color: #191919;
+  background-color: #F8F8FF;
 }
 
 h1 {
   font-family: 'Anonymous Pro', monospace;
-  color: white;
+  color: #000;
   size: 80px;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: #000;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
+  color: #000;
 }
 
 .navbar {
@@ -27,8 +28,8 @@ p {
   font-size: 60px;
 }
 
-.navbar-dark .navbar-brand {
-  color: #14ffec;
+.navbar-light .navbar-brand {
+  color: #00ECB9;
 }
 
 .navbar-toggler-icon {
@@ -69,7 +70,7 @@ p {
   to{width: 5.6em;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
+  from{border-right-color: rgba(0, 0, 0, 0.9);}
   to{border-right-color: transparent;}
 }
 

@@ -1,28 +1,28 @@
 body {
-  background-color: #323232;
+  background-color: #F8F8FF;
 }
 
 h1 {
   font-family: 'Anonymous Pro', monospace;
-  color: white;
+  color: #000;
   size: 80px;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: #000;
 }
 
 a {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   text-decoration: none;
-  color: white;
+  color: #000;
 }
 
 a:hover {
   transition-duration: .3s;
-  color: #14ffec;
+  color: #00ECB9;
 }
 
 /* title */
@@ -44,7 +44,7 @@ a:hover {
 }
 
 .name {
-  color: #14ffec;
+  color: #00ECB9;
 }
 
 .navigation {

@@ -9,22 +9,23 @@
 body {
   color: rgba(255, 255, 255, .75);
   font-family: 'Anonymous Pro', monospace;
-  background-color: #191919;
+  background-color: #F8F8FF;
 }
 
 h1 {
   font-family: 'Anonymous Pro', monospace;
-  color: white;
+  color: #000;
   size: 80px;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: #000;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
+  color: #000;
 }
 
 .navbar {
@@ -35,8 +36,8 @@ p {
   font-size: 60px;
 }
 
-.navbar-dark .navbar-brand {
-  color: #14ffec;
+.navbar-light .navbar-brand {
+  color: #00ECB9;
 }
 
 .navbar-toggler-icon {
@@ -91,7 +92,7 @@ p {
 
 @keyframes blinkTextCursor {
   from {
-    border-right-color: rgba(255, 255, 255, .75);
+    border-right-color: rgba(0, 0, 0, 0.9);
   }
 
   to {
@@ -111,7 +112,7 @@ iframe {
 }
 
 .hr {
-  background: white;
+  background: black;
   margin: 0 100px;
   border: 0;
   height: 0;
@@ -135,7 +136,7 @@ iframe {
           transform: rotate(-12deg) skew(-12deg);
 }
 
-.text1 {
+/* .text1 {
   position: static;
   width: 100%;
   min-width: 800px;
@@ -192,7 +193,7 @@ h3:before {
 
 h3:after {
   margin: 5px 0 0 10px;
-}
+} */
 
 .gallery {
   text-align: center;
@@ -229,7 +230,7 @@ h3:after {
 }
 
 .text2 h1 {
-  color: #f5f5f5;
+  color: #5f4334;
   transform: matrix(1, -0.20, 0, 1, 0, 0);
   -ms-transform: matrix(1, -0.20, 0, 1, 0, 0);
   -webkit-transform: matrix(1, -0.20, 0, 1, 0, 0);
@@ -237,11 +238,11 @@ h3:after {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 70px;
-  text-shadow: 4px 5px #613318, 6px 7px #228b22;
+  text-shadow: 2.5px 3.5px #228b22, 4.5px 5.5px #a2815c;
 }
 
 .text2 h3 {
-  color: #fff;
+  color: #000;
   transform: matrix(1, -0.20, 0, 1, 0, 0);
   -ms-transform: matrix(1, -0.20, 0, 1, 0, 0);
   -webkit-transform: matrix(1, -0.20, 0, 1, 0, 0);
@@ -271,8 +272,8 @@ h3:before, h3:after {
   position: absolute;
   width: 100px;
   height: 8px;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 h3:before {
@@ -284,7 +285,7 @@ h3:after {
 }
 /* ---- */
 
-.text3 {
+/* .text3 {
   position: static;
   width: 100%;
   min-width: 800px;
@@ -341,7 +342,7 @@ h3:before {
 
 h3:after {
   margin: 5px 0 0 10px;
-}
+} */
 
 /* .hells-main img{
   max-width: 60%;
