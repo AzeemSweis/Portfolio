@@ -58,6 +58,13 @@ Branch: `feat/modernize-portfolio` (not yet pushed/merged)
   - Others TBD
 - [ ] Add screenshots/images for new project cards
 
+### Image Asset Management
+
+- [ ] Move images out of the git repo — binary assets bloat the repo and slow clones
+- [ ] Evaluate options: Cloudinary, Vercel Blob, S3 + CloudFront, or Git LFS
+- [ ] Update image references in data files (`projects.ts`, `trips.ts`) to pull from remote URLs
+- [ ] Remove `public/images/` from the repo once remote hosting is confirmed working
+
 ### Future Enhancements (Low Priority)
 
 - Enable Santa Cruz trip on Travel page (data already in `trips.ts`, just needs to be unfiltered)
