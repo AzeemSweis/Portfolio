@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Download } from 'lucide-react'
 
-const RESUME_PATH = '/pdf/azeemsweis_resume.pdf'
+const RESUME_PATH = `/pdf/azeemsweis_resume.pdf?v=${Date.now()}`
 
 export function ResumeSection() {
   return (
@@ -25,6 +25,15 @@ export function ResumeSection() {
         <Download size={16} strokeWidth={2} />
         Download Resume
       </a>
+
+      {/* Embedded PDF viewer — hidden on mobile where PDF rendering is unreliable */}
+      <div className="hidden md:block mt-8 rounded-lg overflow-hidden border border-white/10">
+        <iframe
+          src={RESUME_PATH}
+          title="Resume"
+          className="w-full h-[700px] bg-white"
+        />
+      </div>
     </motion.div>
   )
 }
