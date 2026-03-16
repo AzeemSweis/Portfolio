@@ -46,7 +46,7 @@ Branch: `feat/modernize-portfolio` (merged to `main`)
 - [x] Push `feat/modernize-portfolio` branch and merge to `main`
 - [ ] Deploy to Vercel from `main` branch
 - [x] Investigate **azeemsw.com** DNS — was Google Domains forwarding to S3/CloudFront; DNS now updated to Vercel DNS records
-- [ ] Disable GitHub Pages deployment (currently serving from `colors` branch)
+- [x] Disable GitHub Pages deployment
 
 ### Content Expansion
 
