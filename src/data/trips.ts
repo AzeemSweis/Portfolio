@@ -64,24 +64,17 @@ export const trips: Trip[] = [
     ],
   },
   {
-    id: 'santa-cruz',
-    location: 'California',
-    name: 'Santa Cruz',
-    subtitle: 'A November road trip from Reno to Santa Cruz and up the California 1 highway.',
+    id: 'trip-template',
+    location: 'State / Country',
+    name: 'Trip Name',
+    subtitle: 'This is a template entry — replace this subtitle with a short description of the trip.',
     stops: [
       {
-        name: 'Santa Cruz & Highway 1',
+        name: 'Stop Name',
         paragraphs: [
-          "I took this trip with my girlfriend on November 13, 2020. We drove from Reno, NV to Santa Cruz, CA. We took I-80 West for the majority of the trip, going through Sacramento and the East Bay Towns. Being so close to the water, but viewing it from the cliffs was a unique sight for us. And the rainy weather that day only served to enhance the experience.",
-          "After getting lunch at the Santa Cruz Pier, we drove up the California 1 highway, a first for the both of us in this part of the state, all the way to Pacifica, where I practically forced us to stop by Taco Bell By The Sea. Driving up the 1 was amazing, the highway coming so close to the water. After stopping where I wanted to stop, we drove up to Daly City and went where she wanted to go — a super Target with 2 stories and an escalator, which in and of itself is an experience.",
-          "Driving back, through San Francisco, we got word that Donner Pass, our route home, was snowing heavily and that we required chains. After some quick thinking on our feet, we managed to secure some new chains for the car and we made our way up the mountain. Although we were able to get the chains on the car successfully (and keep them throughout the drive), I highly recommend practicing chain installations at home rather than on a mountain in the freezing cold.",
+          "This is a template trip. To add a new trip, duplicate this object in src/data/trips.ts and fill in the id, location, name, subtitle, and stops fields. Add your images to public/images/[TripFolder]/ and reference them in the images array below.",
         ],
-        images: [
-          '/images/SantaCruz/SantaCruz2020_1.jpg',
-          '/images/SantaCruz/SantaCruz2020_2.jpg',
-          '/images/SantaCruz/SantaCruz2020_3.jpg',
-          '/images/SantaCruz/SantaCruz2020_4.jpg',
-        ],
+        images: [],
       },
     ],
   },
