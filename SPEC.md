@@ -13,7 +13,7 @@ Full modernization from static HTML to a React SPA:
 - **Stack**: React 18 + Vite + TypeScript + Tailwind CSS v4 + Framer Motion + React Router v7
 - **Design**: Dark theme preserved (`#14ffec` accent), new fonts (Inter + JetBrains Mono), modern spacing/layout, scroll-triggered animations, page transitions
 - **Content**: Bio updated to reflect current DevOps Engineer role at Houzz. Skills grid added (AWS, K8s, Terraform, etc.). Resume PDF embedded inline on desktop with download fallback.
-- **Structure**: All content driven from static data files (`src/data/*.ts`). Travel narrative text migrated from HTML into `trips.ts`. Santa Cruz trip data included but hidden for now.
+- **Structure**: All content driven from static data files (`src/data/*.ts`). Travel narrative text migrated from HTML into `trips.ts`. Santa Cruz trip data and images removed (not worth showcasing).
 - **Infra**: Added `vercel.json` for SPA routing, `Makefile`, `.gitignore`, updated `README.md`
 - **Old files removed**: The original `css/`, `scripts/`, `pages/`, `icons/`, `images/` directories were removed in the cleanup branch
 
@@ -36,7 +36,7 @@ Branch: `feat/modernize-portfolio` (merged to `main`)
 - **Home** (`/`): Hero with typewriter animation, nav cards, social links
 - **About** (`/about`): Bio, profile photo, skills/tech grid
 - **Work** (`/work`): Inline resume PDF viewer, project cards
-- **Travel** (`/travel`): Google Maps embed, Grand Staircase Escalante trip story with photos
+- **Travel** (`/travel`): Google Maps embed, trip stories with photos. Includes a template trip entry demonstrating the data structure for adding new trips
 
 ## TODO — Next Session
 
@@ -67,7 +67,7 @@ Branch: `feat/modernize-portfolio` (merged to `main`)
 
 ### Future Enhancements (Low Priority)
 
-- Enable Santa Cruz trip on Travel page (data already in `trips.ts`, just needs to be unfiltered)
-- Consider adding more travel stories
+- [x] ~~Enable Santa Cruz trip~~ — Removed instead. Trip data and images deleted; not worth showcasing
+- Consider adding more travel stories — a trip template has been added to `trips.ts` making this straightforward
 - Responsive polish pass once real content is finalized
 - Vercel Analytics or Plausible for traffic insights
