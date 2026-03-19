@@ -9,7 +9,7 @@ const staticExperience: ExperienceEntry[] = [
   {
     role: 'DevOps Engineer',
     company: 'Houzz',
-    period: '2021 - PRESENT',
+    period: '2024 - PRESENT',
     current: true,
     bullets: [
       'Managing EKS and kops Kubernetes clusters across production environments',
@@ -19,14 +19,14 @@ const staticExperience: ExperienceEntry[] = [
     ],
   },
   {
-    role: 'Systems / IT Administrator',
+    role: 'SWE & DevOps',
     company: 'Earlier Roles',
-    period: '2018 - 2021',
+    period: '2021 - 2024',
     current: false,
     bullets: [
-      'Linux server administration and network operations',
+      'Graduated UNR CS, worked on infrastructure, automation, and cloud migrations',
       'Scripting and automation with Python and Bash',
-      'Transitioned from traditional sysadmin into cloud-native DevOps work',
+      'Transitioned into cloud-native DevOps work',
     ],
   },
 ]

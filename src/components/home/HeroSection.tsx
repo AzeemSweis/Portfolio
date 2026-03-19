@@ -162,17 +162,17 @@ export function HeroSection() {
             <div className="p-6 space-y-5 font-mono text-sm">
               <div className="border-l-2 border-[#14ffec]/40 pl-4 py-1">
                 <div className="text-[#14ffec] font-bold">DevOps Engineer @ Houzz</div>
-                <div className="text-[#525252] text-xs mt-0.5">2021 - PRESENT</div>
+                <div className="text-[#525252] text-xs mt-0.5">2024 - PRESENT</div>
                 <p className="text-[#a3a3a3] mt-2 leading-relaxed">
                   Managing EKS + kops Kubernetes clusters, Jenkins/ArgoCD pipelines, and
                   AWS infrastructure with Terraform and Helm.
                 </p>
               </div>
               <div className="border-l-2 border-white/10 pl-4 py-1">
-                <div className="text-white font-bold opacity-80">Systems &amp; DevOps — Earlier Roles</div>
-                <div className="text-[#525252] text-xs mt-0.5">2018 - 2021</div>
+                <div className="text-white font-bold opacity-80">SWE &amp; DevOps — Earlier Roles</div>
+                <div className="text-[#525252] text-xs mt-0.5">2021 - 2024</div>
                 <p className="text-[#a3a3a3] mt-2 leading-relaxed">
-                  Graduated UNLV CS, worked on infrastructure automation and cloud migrations.
+                  Graduated UNR CS, worked on infrastructure, automation, and cloud migrations.
                 </p>
               </div>
               <Link
@@ -189,8 +189,8 @@ export function HeroSection() {
             <div className="p-6 font-mono text-sm leading-relaxed text-[#a3a3a3] flex flex-col gap-4 h-full">
               <p>
                 <span className="text-[#14ffec] font-bold">&gt; START LOG:</span> Born in Los
-                Angeles, raised in Las Vegas. CS grad from UNLV, now building cloud-native
-                infrastructure at Houzz.
+                Angeles, raised in Las Vegas. CS grad from UNR, now building cloud-native
+                automation at Houzz.
               </p>
               <p>
                 Outside the terminal — avid hiker, traveler, and photographer (Nikon). Currently

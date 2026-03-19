@@ -130,7 +130,7 @@ EXPERIENCE: list[dict] = [
     {
         "role": "DevOps Engineer",
         "company": "Houzz",
-        "period": "2021 - PRESENT",
+        "period": "2024 - PRESENT",
         "is_current": True,
         "bullets": json.dumps([
             "Managing EKS and kops Kubernetes clusters across production environments",
@@ -141,14 +141,14 @@ EXPERIENCE: list[dict] = [
         "sort_order": 0,
     },
     {
-        "role": "Systems / IT Administrator",
+        "role": "SWE & DevOps",
         "company": "Earlier Roles",
-        "period": "2018 - 2021",
+        "period": "2021 - 2024",
         "is_current": False,
         "bullets": json.dumps([
-            "Linux server administration and network operations",
+            "Graduated UNR CS, worked on infrastructure, automation, and cloud migrations",
             "Scripting and automation with Python and Bash",
-            "Transitioned from traditional sysadmin into cloud-native DevOps work",
+            "Transitioned into cloud-native DevOps work",
         ]),
         "sort_order": 1,
     },
