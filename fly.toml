@@ -1,0 +1,35 @@
+app = "azeem-portfolio-api"
+primary_region = "lax"
+
+[build]
+  dockerfile = "api/Dockerfile"
+
+[env]
+  # Non-secret config. The DATABASE_URL points to the persistent volume.
+  # All secrets (JWT_SECRET, CLOUDINARY_*, CORS_ORIGINS) are set via:
+  #   fly secrets set JWT_SECRET=<value> ...
+  DATABASE_URL = "sqlite+aiosqlite:////data/portfolio.db"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  # Sleep when idle; wake on first request (cold start ~1-2s, acceptable for personal project)
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+  [http_service.concurrency]
+    type = "connections"
+    hard_limit = 25
+    soft_limit = 20
+
+[[mounts]]
+  source = "portfolio_data"
+  destination = "/data"
+
+[[http_service.checks]]
+  grace_period = "10s"
+  interval = "30s"
+  method = "GET"
+  path = "/health"
+  timeout = "5s"
