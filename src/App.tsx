@@ -1,3 +1,4 @@
+import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import { Navbar } from './components/layout/Navbar'
@@ -16,19 +17,30 @@ import { TripsManager } from './admin/TripsManager'
 import { SkillsManager } from './admin/SkillsManager'
 import { SocialsManager } from './admin/SocialsManager'
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
+
 function AnimatedRoutes() {
   const location = useLocation()
 
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/work" element={<WorkPage />} />
-        <Route path="/travel" element={<TravelPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </AnimatePresence>
+    <>
+      <ScrollToTop />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/work" element={<WorkPage />} />
+          <Route path="/travel" element={<TravelPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </AnimatePresence>
+    </>
   )
 }
 
