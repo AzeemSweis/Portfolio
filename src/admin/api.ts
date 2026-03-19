@@ -198,13 +198,15 @@ export async function adminFetch(
   options: RequestInit = {},
 ): Promise<Response> {
   const makeRequest = (token: string): Promise<Response> => {
+    const isFormData = options.body instanceof FormData
+    const headers: Record<string, string> = {
+      ...(isFormData ? {} : { 'Content-Type': 'application/json' }),
+      ...(options.headers as Record<string, string>),
+      Authorization: `Bearer ${token}`,
+    }
     return fetch(`${getApiBase()}${endpoint}`, {
       ...options,
-      headers: {
-        'Content-Type': 'application/json',
-        ...options.headers,
-        Authorization: `Bearer ${token}`,
-      },
+      headers,
     })
   }
 
