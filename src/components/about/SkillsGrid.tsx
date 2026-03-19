@@ -35,15 +35,15 @@ export function SkillsGrid() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-50px' }}
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4"
+            className="flex flex-wrap justify-center gap-3"
           >
             {allSkills.map(skill => (
               <motion.div
                 key={skill}
                 variants={pillVariants}
-                className="group cursor-default border border-white/5 bg-white/5 hover:border-[#14ffec]/50 p-4 rounded-lg transition-all text-center"
+                className="group cursor-default border border-white/5 bg-white/5 hover:border-[#14ffec]/50 px-5 py-3 rounded-lg transition-all text-center"
               >
-                <span className="font-mono text-sm text-[#a3a3a3] group-hover:text-[#14ffec] transition-colors">
+                <span className="font-mono text-sm text-[#a3a3a3] group-hover:text-[#14ffec] transition-colors whitespace-nowrap">
                   {skill}
                 </span>
               </motion.div>
