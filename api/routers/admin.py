@@ -155,8 +155,12 @@ async def admin_create_skill_category(
     row = SkillCategory(**body.model_dump())
     db.add(row)
     await db.commit()
-    await db.refresh(row)
-    return row
+    result = await db.execute(
+        select(SkillCategory)
+        .options(selectinload(SkillCategory.skills))
+        .where(SkillCategory.id == row.id)
+    )
+    return result.scalar_one()
 
 
 @router.put("/skill-categories/{category_id}", response_model=SkillCategoryOut)
