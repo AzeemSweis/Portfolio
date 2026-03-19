@@ -6,6 +6,15 @@ import { HomePage } from './pages/HomePage'
 import { AboutPage } from './pages/AboutPage'
 import { WorkPage } from './pages/WorkPage'
 import { TravelPage } from './pages/TravelPage'
+import { AdminLogin } from './admin/AdminLogin'
+import { AdminLayout } from './admin/AdminLayout'
+import { DashboardPage } from './admin/DashboardPage'
+import { BioEditor } from './admin/BioEditor'
+import { ProjectsManager } from './admin/ProjectsManager'
+import { ExperienceManager } from './admin/ExperienceManager'
+import { TripsManager } from './admin/TripsManager'
+import { SkillsManager } from './admin/SkillsManager'
+import { SocialsManager } from './admin/SocialsManager'
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -23,16 +32,36 @@ function AnimatedRoutes() {
   )
 }
 
+function PublicLayout() {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <div className="flex-1">
+        <AnimatedRoutes />
+      </div>
+      <Footer />
+    </div>
+  )
+}
+
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        <div className="flex-1">
-          <AnimatedRoutes />
-        </div>
-        <Footer />
-      </div>
+      <Routes>
+        {/* Admin routes — no public Navbar/Footer */}
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<DashboardPage />} />
+          <Route path="bio" element={<BioEditor />} />
+          <Route path="projects" element={<ProjectsManager />} />
+          <Route path="experience" element={<ExperienceManager />} />
+          <Route path="trips" element={<TripsManager />} />
+          <Route path="skills" element={<SkillsManager />} />
+          <Route path="socials" element={<SocialsManager />} />
+        </Route>
+        {/* Public site */}
+        <Route path="/*" element={<PublicLayout />} />
+      </Routes>
     </BrowserRouter>
   )
 }

@@ -1,0 +1,29 @@
+# Build context is the repo root. The API image only needs api/.
+# Exclude everything the backend container doesn't need.
+
+# Frontend
+node_modules/
+dist/
+.vite/
+src/
+public/
+
+# Git
+.git/
+.github/
+
+# Local dev DB and secrets — never bake into an image
+api/portfolio.db
+api/.env
+
+# Python cache (also excluded by PYTHONDONTWRITEBYTECODE, but belt-and-suspenders)
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.pytest_cache/
+.ruff_cache/
+**/*.egg-info/
+
+# OS artifacts
+.DS_Store

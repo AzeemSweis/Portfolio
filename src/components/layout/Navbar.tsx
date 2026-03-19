@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Terminal } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navLinks = [
@@ -12,32 +12,21 @@ const navLinks = [
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
 
   useEffect(() => {
     setMenuOpen(false)
   }, [location])
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
-
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/5' : 'bg-transparent'
-      }`}
-    >
-      <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <NavLink
-          to="/"
-          className="font-mono text-lg font-bold text-[#14ffec] tracking-tight hover:opacity-80 transition-opacity"
-        >
-          AS
+        <NavLink to="/" className="flex items-center gap-3 group">
+          <Terminal size={22} className="text-[#14ffec]" strokeWidth={1.5} />
+          <span className="font-mono font-bold text-lg text-white tracking-tight group-hover:text-[#14ffec] transition-colors duration-200">
+            AZEEM SWEIS
+          </span>
         </NavLink>
 
         {/* Desktop nav */}
@@ -48,28 +37,28 @@ export function Navbar() {
               to={link.to}
               end={link.to === '/'}
               className={({ isActive }) =>
-                `text-sm font-medium transition-colors duration-200 relative pb-0.5 group ${
-                  isActive ? 'text-[#14ffec]' : 'text-[#a3a3a3] hover:text-[#f5f5f5]'
+                `font-mono text-sm font-medium transition-colors duration-200 relative pb-0.5 group ${
+                  isActive
+                    ? 'text-[#14ffec] border-b border-[#14ffec]'
+                    : 'text-[#a3a3a3] hover:text-[#14ffec]'
                 }`
               }
             >
-              {({ isActive }) => (
-                <>
-                  {link.label}
-                  <span
-                    className={`absolute bottom-0 left-0 h-px bg-[#14ffec] transition-all duration-200 ${
-                      isActive ? 'w-full' : 'w-0 group-hover:w-full'
-                    }`}
-                  />
-                </>
-              )}
+              {link.label}
             </NavLink>
           ))}
+
+          <a
+            href="mailto:contact@azeemsweis.dev"
+            className="bg-[#14ffec] text-[#0a0a0a] px-4 py-1.5 rounded font-mono text-sm font-bold hover:brightness-110 transition-all"
+          >
+            Contact
+          </a>
         </div>
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-[#a3a3a3] hover:text-[#f5f5f5] transition-colors"
+          className="md:hidden text-[#14ffec] hover:opacity-80 transition-opacity"
           onClick={() => setMenuOpen(prev => !prev)}
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
         >
@@ -85,16 +74,16 @@ export function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden bg-[#141414] border-b border-white/5 overflow-hidden"
+            className="md:hidden bg-[#141414] border-b border-white/10 overflow-hidden"
           >
-            <div className="max-w-[1200px] mx-auto px-6 py-4 flex flex-col gap-4">
+            <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-4">
               {navLinks.map(link => (
                 <NavLink
                   key={link.to}
                   to={link.to}
                   end={link.to === '/'}
                   className={({ isActive }) =>
-                    `text-base font-medium py-1 transition-colors duration-200 ${
+                    `font-mono text-sm font-medium py-1 transition-colors duration-200 ${
                       isActive ? 'text-[#14ffec]' : 'text-[#a3a3a3]'
                     }`
                   }
@@ -102,6 +91,12 @@ export function Navbar() {
                   {link.label}
                 </NavLink>
               ))}
+              <a
+                href="mailto:contact@azeemsweis.dev"
+                className="inline-block bg-[#14ffec] text-[#0a0a0a] px-4 py-2 rounded font-mono text-sm font-bold w-fit"
+              >
+                Contact
+              </a>
             </div>
           </motion.div>
         )}

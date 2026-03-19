@@ -2,3 +2,7 @@ node_modules/
 dist/
 *.local
 .DS_Store
+
+# Backend — local dev artifacts, never commit
+api/portfolio.db
+api/.env

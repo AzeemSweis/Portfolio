@@ -1,5 +1,9 @@
 import { Github, Linkedin, Instagram, Twitter } from 'lucide-react'
-import { socials } from '../../data/socials'
+import { socials as staticSocials } from '../../data/socials'
+import { useContent } from '../../hooks/useContent'
+import { adaptSocials } from '../../lib/adapters'
+import type { ApiSocialLink } from '../../lib/adapters'
+import type { SocialLink } from '../../data/socials'
 
 const iconMap = {
   Github,
@@ -14,6 +18,12 @@ interface SocialLinksProps {
 }
 
 export function SocialLinks({ className = '', iconSize = 20 }: SocialLinksProps) {
+  const { data: socials } = useContent<SocialLink[], ApiSocialLink[]>(
+    'socials',
+    staticSocials,
+    adaptSocials,
+  )
+
   return (
     <div className={`flex items-center gap-5 ${className}`}>
       {socials.map(social => {

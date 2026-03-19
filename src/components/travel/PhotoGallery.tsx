@@ -14,10 +14,9 @@ export function PhotoGallery({ images, stopName }: PhotoGalleryProps) {
         <motion.div
           key={src}
           initial={{ opacity: 0, scale: 0.97 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: '-40px' }}
-          transition={{ duration: 0.45, delay: i * 0.08 }}
-          className="overflow-hidden rounded-lg"
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, delay: i * 0.08 }}
+          className="overflow-hidden rounded-lg border border-white/10"
         >
           <img
             src={src}
